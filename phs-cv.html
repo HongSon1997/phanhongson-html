@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 1000px;
+            height: 100vh;
+            background-color: coral;
+        }
+        .row-header{
+            display: flex;
+            height: 120px;
+        }
+        .row-tittle{
+            background-color: cornflowerblue;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+        .row-tittle>h1{
+            font-size: 32px;
+            letter-spacing: 10px;
+            color: white;
+        }
+        .row-tittle>p{
+            font-style: italic;
+            margin-top: -10px;
+        }
+        .column-left{
+            display: flex;
+            width: 33%;
+            background-color: black;
+            flex-direction: column;
+        }
+        .column-left>h2{
+            color: white;
+            padding-left: 20px;
+        }
+        .column-left>p{
+            color: white;
+            padding-left: 20px;
+        }.column-left>img{
+            padding-left: 20px;
+            height: 200px; width: 200px;
+        }
+        .column-left>ul{
+            color: white;
+            font-style: italic;
+        }
+        .column-right{
+            width: 67%;
+            background-color: white;
+            display: flex; 
+        }
+        .resusme{
+            color: white;
+            padding-left: 12px;
+        }
+        .row-content{
+            background-color: tomato;
+            display: flex;
+            min-height: 600px;
+        }
+        .column-right-content{
+            width: 100%;
+        }
+        .list>h2{
+            padding-left: 15px;
+            color: gray;
+            width: 100%;
+        }
+        .small-list{
+            width: 100%;
+            display: flex;
+        }
+        
+        .left{
+            width: 33%;
+            padding-left: 12px;
+        
+        }
+        .right{
+            width: 67%; 
+        }
+        .right-flex{
+            width: 67%;
+            display: flex;
+        }
+        .d1{
+            height: 10px;
+            background-color: black;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .d2{
+            width: 20%;
+            background-color: gray;
+            height: 10px;
+            margin-top: 20px;
+        }
+        .d3{
+            height: 10px;
+            background-color: black;
+            width: 60%;
+            margin-top: 20px;
+        }
+        .d4{
+            height: 10px;
+            background-color: gray;
+            width: 40%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Row-Header -->
+        <div class="row-header">
+            <div class="column-left">
+                <h2 class="resusme"> RESUSME </h2>
+            </div>
+            <div class="column-right"></div>
+        </div>
+        <!-- Row-tittle -->
+        <div class="row-tittle">
+            <h1> PHAN HONG SON </h1>
+            <p> Grapphic Designer </p>
+        </div>
+        <!-- Row-content -->
+        <div class="row-content">
+            <div class="column-left">
+                <img src="./a.png" alt="Phan Hong Son"/>
+                <h2> PROFILE </h2>
+                <p> Name </p>
+                <p style="font-style: italic;"> Phan Hong Son </p>
+                <p> Date of Birth </p>
+                <p style="font-style: italic;"> 22/02/2002 </p>
+                <p> Phone </p>
+                <p style="font-style: italic;"> 0989 789 888</p>
+                <p> Email </p>
+                <p style="font-style: italic;"> phs.dev@gmail.com </p>
+                <p> Website </p>
+                <p style="font-style: italic;"> www.3dongke.com </p>
+                <h2> HOBBIES </h2>
+                    <ul style="list-style-type: disc;">
+                        <li> Dance </li>
+                        <li> Watching TV </li>
+                        <li> Read books </li>
+                    </ul>
+            </div>
+            <div class="column-right">
+                <div class="column-right-content" >
+                    <div class="list">
+                        <h2>JOB EXPERIENCES </h2>
+                        <div class="small-list">
+                            <div class="left">
+                                <p> 2014 - 2015 </p>
+                            </div>
+                            <div class="right">
+                                <p> COMPANY NAME 1</p>
+                                <p style="font-style: italic;"> Position 1</p>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p> 2011 - 2013</p>
+                            </div>
+                            <div class="right">
+                                <p> COPANY NAME 2</p>
+                                <p style="font-style: italic;"> Position 2 </p>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p> 2009 - 2010</p>
+                            </div>
+                            <div class="right">
+                                <p> COPANY NAME 3</p>
+                                <p style="font-style: italic;"> Position 3 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h2> EDUCAUTION </h2>
+                        <div class="small-list">
+                            <div class="left">
+                                <p> 2008 - 2012 </p>
+                            </div>
+                            <div class="right">
+                                <p> UNVERSITY NAME </p>
+                                <p style="font-style: italic;"> Course studied </p>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p> 2011 - 2013</p>
+                            </div>
+                            <div class="right">
+                                <p> UNVERSITY NAME </p>
+                                <p style="font-style: italic;"> Course studied </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h2> PROFESSIONAL SKILLS </h2>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> Photoshop </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d1"></div>
+                                <div class="d2"></div>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> Illustrastor </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d3"></div>
+                                <div class="d4"></div>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> HTML (5) </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d1"></div>
+                                <div class="d2"></div>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> CSS (3) </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d3"></div>
+                                <div class="d4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h2> PERSONAL SKILLS </h2>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> Team Work </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d1"></div>
+                                <div class="d2"></div>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> Timekeeping </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d3"></div>
+                                <div class="d4"></div>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> Organisation </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d1"></div>
+                                <div class="d2"></div>
+                            </div>
+                        </div>
+                        <div class="small-list">
+                            <div class="left">
+                                <p style="font-weight: bold;"> Comunication </p>
+                            </div>
+                            <div class="right-flex">
+                                <div class="d3"></div>
+                                <div class="d4"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
