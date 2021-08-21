@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resusme-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">  
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <style>
+        .body{
+            font-family: 'Lato', sans-serif;
+        }
+        .container{
+            width: 1000px;
+            height: auto;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        .header{
+            flex: 1;
+            display: flex;
+           
+        }
+        .avatar{
+            flex: 2;  
+            display: flex;
+            justify-content: center;
+        }
+        .avatar>img{
+            border-style: solid;
+            border-color: peru;
+            border-width: 4px;
+        }
+        .tittle{
+            flex: 3;
+            padding-left: 30px;
+        }
+        .tittle>h1{
+            letter-spacing: 15px;
+            margin-bottom: -5px;
+            font-family: 'Lato', sans-serif;
+        }
+        .tittle>p{
+            letter-spacing: 8px;
+            font-size: 15px;
+        }
+        .center{
+            flex: 5;
+            /* background-color: dodgerblue; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-column{
+            flex: 40%;
+            /* background-color: darkcyan; */
+            display: flex;
+            flex-direction: column;
+            padding-right: 25px;
+        }
+        .left-list{
+            flex: 1;
+        }
+        .left-list>h3{
+            letter-spacing: 3px;
+            margin-bottom: -3px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+        }
+        .left-list>span{
+           text-align: left;
+           padding-left: 6px;
+           font-family: 'Lato', sans-serif;
+        }
+        .left-list>ul{
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+        .left-list>p{
+            font-size: 14px;
+            padding-left: 15px;
+            text-align: left;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            font-family: 'Lato', sans-serif;
+        }
+        .right-column{
+            flex: 60%;
+            /* background-color: darkolivegreen; */
+            display: flex;
+            flex-direction: column;
+            padding-left: 25px;
+        }
+        .right-list{
+            flex: 1;
+        }
+        .right-list-language{
+            width: 100%;
+            display: flex;
+        }
+        .right-list-language-1{
+            width: 40%;
+        }
+        .right-list-language-1>p{
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            padding-left: 25px;
+        }
+        .right-list-language-2{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+        .right-list-language-2{
+            width: 100%;
+            display: flex;
+        }
+        .line{
+            flex: 1;
+            display: flex;
+        }
+        .right-list>h3{
+            letter-spacing: 3px;
+            margin-bottom: -3px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .right-list>ul{
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+        .right-list>p{
+            font-size: 14px;
+            padding-left: 25px;
+            text-align: left;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            font-family: 'Lato', sans-serif;
+        }
+        .footer{
+            flex: 1;
+            /* background-color:green; */
+            display: flex;
+        }
+        .column-footer{
+            flex: 1;
+        }
+        .column-footer>img{
+            padding-left: 20px;
+        }
+        .a123{
+            font-size: 14px;
+            padding-left: 15px;
+            text-align: left;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            font-family: 'Lato', sans-serif;
+        }
+        .d1{
+            height: 10px;
+            background-color: #07C6E5;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .d2{
+            width: 20%;
+            background-color: #CDCDCD;
+            height: 10px;
+            margin-top: 20px;
+        }
+        .d3{
+            height: 10px;
+            background-color: #07C6E5;
+            width: 60%;
+            margin-top: 20px;
+        }
+        .d4{
+            height: 10px;
+            background-color: #CDCDCD;
+            width: 40%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Row-Header -->
+    <div class="container">
+        <div class="header">
+            <div class="avatar">
+                <img src="a.png" width="150px" height="150px"/>
+            </div>
+            <div class="tittle">
+                <h1> MICHAEL WARN </h1>
+                <p> INTERPRETER & TRANSLATOR </p>
+            </div>
+        </div>
+        <!-- Row-center -->
+        <div class="center">
+            <div class="left-column">
+                <div class="left-list">
+                    <h3> CONTACT </h3>
+                    <hr size="2px" align="center" color="yellow"/> 
+                    <span class="iconify" data-icon="ant-design:mail-outlined" style="padding-left: 10px;"></span>
+                    <span >hello@kevinwarner.com</span><br/>
+                    <span class="iconify" data-icon="clarity:phone-handset-solid" style="padding-left: 10px;"></span>
+                    <span> +44 1084 7947 </span><br/>
+                    <span class="iconify" data-icon="fluent:location-28-filled" style="padding-left: 10px;"></span>
+                    <span> 58 Geogetown Height, 
+                        Swansea, England 
+                    </span>                 
+                </div>
+                <div class="left-list">
+                    <h3> EDUCATION </h3>
+                    <hr size="2px" align="center" color="yellow"/> 
+                    <p style="color: gray;"> BACHELOR OF ARTS, MAJOR IN ENG LISH </p>
+                    <p style="font-style: italic;"> University of Glasgow </p>
+                    <p> 2007 - 2011 </p>
+                </div>
+                <div class="left-list">
+                    <h3> AWARDS </h3>
+                    <hr size="2px" align="center" color="yellow"/>
+                    <p style="font-weight:bold; padding-top: 10px;"> BLUE RIBBON </p>
+                    <p style="font-weight:bold; font-style: italic;"> Staff Recognition Program 2014</p>
+                    <p style="color: gray;"> Jones & Lewis Associates </p>
+                    <p style="font-weight:bold; padding-top: 10px;"> GOLD RIBBON </p>
+                    <p style="font-weight:bold; font-style: italic;"> Staff Recognition Program 2013 </p>
+                    <p style="color: gray;"> Jones & Lewis Associates </p>
+                </div>
+                <div class="left-list">
+                    <h3> REFERENCES </h3>
+                    <hr size="2px" align="center" color="yellow"/>
+                    <p style="font-weight:bold; padding-top: 10px;"> JOHN WILLIAMS </p>
+                    <p style="font-weight:bold; font-style: italic;"> WilliamsonCompany </p>
+                    <p style="color: gray;"> hello@johnwilliams.com </p>
+                    <p style="font-weight:bold; padding-top: 10px;"> REGINA GRAHAM </p>
+                    <p style="font-weight:bold; font-style: italic;"> University of Glasgow </p>
+                    <p style="color: gray;"> regina.admason@glasgow.edu.uk </p>
+                </div>
+                <div class="left-list">
+                    <h3> QUALIFICATIONS </h3>
+                    <hr size="2px" align="center" color="yellow"/>
+                    <ul style="list-style-type: circle; padding-top: 10px;">
+                        <li> ILETS Certificate </li>
+                        <li> Hanyu Shuping Kaoshi </li>
+                        <li> Certificate of Attainment in French</li>
+                        <li> Basic Korean Certificate </li>
+                        <li> Japanese Language Proficiency Test </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="right-list">
+                    <h3> PROFILE </h3>
+                    <hr size="2px" align="center" color="yellow"/>
+                    <p> I am professional inter and translator seeking a full-time position
+                        in the filed of interpreting and transiotion, where i can apply my knowledge
+                        and skill for continuos improvement.
+                    </p>
+                </div>
+                <div class="right-list">
+                    <h3> INTERPRETING EXPERIENCE </h3>
+                    <hr size="2px" align="center" color="yellow"/>
+                    <p style="font-weight:bold; padding-top: 10px;"> LEAD INTERPRETER </p>
+                    <p style="font-weight:bold; font-style: italic;"> Jones & Lewis Associates </p>
+                    <ul style="list-style-type: circle;">
+                        <li> Translated speeches Adpted and edited</li>
+                        <li> Check documnent Adpted and edited</li>
+                        <li> Adpted and edited Adpted and edited</li>
+                        <li> Proofead and edited Adpted and edited</li>
+                        <li> Used electronic Adpted and edited</li>
+                    </ul>
+                    <p style="font-weight:bold; padding-top: 10px;"> JUNIOR TRANSLATOR </p>
+                    <p style="font-weight:bold; font-style: italic;"> Kingsman Publishing House </p>
+                    <ul style="list-style-type: circle;">
+                        <li> Translated speeches Translated speeches </li>
+                        <li> Check documnent Translated speeches </li>
+                        <li> Adpted and edited Translated speeches </li>
+                        <li> Proofead and edited Translated speeches </li>
+                        <li> Used electronic Translated speeches </li>
+                    </ul>
+                    <p style="font-weight:bold; padding-top: 10px;"> TEACHING ASSISTANT </p>
+                    <p style="font-weight:bold; font-style: italic;"> Glasgow International School </p>
+                    <ul style="list-style-type: circle;">
+                        <li> Translated speeches Translated speeches </li>
+                        <li> Check documnent Translated speeches </li>
+                        <li> Adpted and edited Translated speeches </li>
+                        <li> Proofead and edited Translated speeches </li>
+                        <li> Used electronic Translated speeches </li>
+                    </ul>
+                </div>
+                <div class="right-list">
+                    <h3> LANGUAGES </h3>
+                    <hr size="2px" align="center" color="yellow"/>
+                    <div class="right-list-language">
+                        <div class="right-list-language-1">
+                            <p> ENGLISH </p>
+                            <p> MANDARIN </p>
+                            <p> JAPANESE </p>
+                            <p> SPANISH </p>
+                            <p> FRENCH </p>
+                        </div>
+                        <div class="right-list-language-2">
+                           <div class="right-list-language-2">
+                                <div class="line">
+                                    <div class="d1"></div>
+                                    <div class="d2"></div>
+                                </div>
+                                <div class="line">
+                                    <div class="d3"></div>
+                                    <div class="d4"></div>
+                                </div>
+                                <div class="line">
+                                    <div class="d1"></div>
+                                    <div class="d2"></div>
+                                </div>
+                                <div class="line">
+                                    <div class="d3"></div>
+                                    <div class="d4"></div>
+                                </div>
+                                <div class="line">
+                                    <div class="d1"></div>
+                                    <div class="d2"></div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row-footer -->
+        <div class="footer">
+            <div class="column-footer">
+                <img src="https://cdn.dribbble.com/users/944504/screenshots/4095878/pp_fb_copy.jpg?compress=1&resize=400x300" width="200px" height="100px"/>
+            </div>
+            <div class="column-footer">
+                <div class="a123" style="padding-top: 25px;">
+                    <span class="iconify" data-icon="fluent:location-28-filled"></span>
+                    <span> 124 King streets. NY</span><br/>
+                    <span class="iconify" data-icon="carbon:phone-voice-filled"></span>
+                    <span> 0123 456 789 </span>
+                </div>
+            </div>
+            <div class="column-footer">
+                <div class="a123" style="padding-top: 25px;">
+                    <span class="iconify" data-icon="fluent:mail-24-filled"></span>
+                    <span> mail@ychoice.com </span><br/>
+                    <span class="iconify" data-icon="pepicons:internet"></span>
+                    <span> www.ychoice.com </span>
+                </div>
+            </div>
+            <div class="column-footer">
+                <div class="a123" style="padding-top: 25px;">
+                    <span class="iconify" data-icon="gg:facebook"></span>
+                    <span> facebok.com/ychoice </span><br/>
+                    <span class="iconify" data-icon="typcn:social-skype"></span>
+                    <span> ychoice </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
