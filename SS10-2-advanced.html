@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SS10-2-advanced </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+        }
+        .container{
+            display: flex;
+            height: 500px;
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid gray;
+        }
+        .left{
+            flex: 40%;
+            display: flex;
+            background-color: #19ECB7;
+            justify-content: flex-end;
+            align-items: center;
+        }    
+        .right{
+            flex: 60%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            justify-content: center;
+        }
+        .left-small{
+            display: flex;
+            width: 200px;
+            height: 400px;
+            background-color: #19ECB7;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 5px 5px 15px ;
+            text-align: center;
+            font-weight: bold;
+        }
+        .left-small>p{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .right-small{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            max-width: 350px;
+            box-shadow: 5px 5px 15px;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .right-small-top{
+            height: 20px;
+            width: 300px;
+            flex: 10%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .right-small-bottom{
+            flex: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        input{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        strong {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login{
+            background-color: #19ECB7;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            height: 20px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-small">
+                <img src="./logo-2a.png" width="100px"/>
+                <em style="font-size: 20px;"> CleanMyCar </em>
+                <p> India's first waterless car cleaning company </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-small">
+                <div class="right-small-top">
+                    <span> Need help? </span>
+                </div>
+                <div class="right-small-bottom">
+                    <strong> Log in </strong>
+                    <form>
+                    <input type="email" placeholder="Email" required>
+                    <br/>
+                    <input type="password" placeholder="Password" required>
+                    </form>
+                    <div style="font-weight: bold; font-size: 12px;">
+                        <span style="float: right;"> forgot password? </span>
+                    </div>
+                    <button class="login"> Login </button>
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

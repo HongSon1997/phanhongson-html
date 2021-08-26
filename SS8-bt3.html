@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS8-bt3</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .header{
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+        .photos{
+            flex: 1;
+            justify-content: flex-end;
+            display: flex;
+        }
+        .photos-box{
+            display: flex;
+            justify-content: flex-end;
+            align-content: center;
+            color: gray;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+        span:hover{
+            color: rgb(195, 75, 28);
+            border-bottom: 5px solid rgb(195, 75, 28);
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .videos{
+            flex: 1;
+            justify-content: flex-start;
+            display: flex;
+        }
+        .videos-box{
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            color: gray;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .center{
+            flex: 5;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+        @media only screen and (max-width:768px){
+            .container{
+                width: 30vw;
+            }
+            .center {
+                /* flex-direction: column; */
+                justify-content: center;
+            }
+            .column-center{
+                /* flex-wrap: wrap; */
+                width: 33.33%;
+            }
+            .column-center-box{
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width:1024px){
+            .container{
+                width: 50vw;
+            }
+            .center {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .column-center{
+                flex-wrap: wrap;
+                width: 75%;
+            }
+            .column-center-box{
+                width: 100%;
+            }
+        }
+        .column-center{
+            flex: 1;
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+            flex-direction: column;
+        }
+        .column-center-box{
+            flex: 1;
+            display: flex;
+        }
+        img {
+            height: 200px;
+            width: 200px;
+            filter:grayscale(100%); 
+        }
+        img:hover{
+            height: 190px;
+            width: 190px;
+            filter:grayscale(0%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="photos">
+                <div class="photos-box">
+                    <span style="padding-top: 30px;"> PHOTOS </span>
+                </div>
+            </div>
+            <div class="videos">
+                <div class="videos-box">
+                    <span style="padding-top: 30px;"> VIDEOS </span>
+                </div>
+            </div>
+        </div>
+        <!-- Center -->
+        <div class="center">
+            <!-- Column-1 -->
+            <div class="column-center">
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-1.jpg"/>
+                </div>
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-7.jpg"/>
+                </div>
+            </div>
+            <!-- Column-2 -->
+            <div class="column-center">
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-2.jpg"/>
+                </div>
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-8.jpg"/>
+                </div>
+            </div>
+            <!-- Column-3 -->
+            <div class="column-center">
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-3.jpg"/>
+                </div>
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-9.jpg"/>
+                </div>
+            </div>
+            <!-- Column-4 -->
+            <div class="column-center">
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-4.jpg"/>
+                </div>
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-10.jpg"/>
+                </div>
+            </div>
+            <!-- Column-5 -->
+            <div class="column-center">
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-5 (2).jpg"/>
+                </div>
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-11.jpg"/>
+                </div>
+            </div>
+            <!-- Column-6 -->
+            <div class="column-center">
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-6.jpg"/>
+                </div>
+                <div class="column-center-box">
+                    <img src="./ss8-bt3-12.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

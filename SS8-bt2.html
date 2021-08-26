@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS8-bt2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+        .container{
+            width: 740px;
+            height: 100vh;
+            display: flex;
+            /* background-color: #555; */
+            margin: 0 auto;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .header{
+            flex: 1;
+            display: flex;
+        }
+        .header>img{
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+        a {
+            padding-left: 20px;
+            text-decoration: none;
+            color: #72c02c;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #72c02c;
+        }
+        .name {
+            padding-left: 20px;
+            margin-top: -20px;
+        }
+        .picture{
+            flex: 3;
+        }
+        .infomation{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        .info{
+            flex: 2;
+        }
+        .comment{
+            flex: 1;
+            display: flex;
+        }
+        .comment-box-1{
+            flex: 3;
+            display: flex;
+        }
+        .comment-box-1>span{
+            color: #72c02c;
+            padding-top:  15px;
+        }
+        .comment-box-1>p:hover{
+            cursor: pointer;
+        }
+        .comment-box-1>p{
+            padding-left: 15px;
+        }
+        .comment-box-2{
+            flex: 1;
+            display: flex;
+        }
+        .comment-box-2>p{
+            padding-left: 15px;
+        }
+        .comment-box-2>p:hover{
+            cursor: pointer;
+        }
+        .comment-box-3{
+            flex: 1;
+            display: flex;
+        }
+        .comment-box-3>p{
+            padding-left: 15px;
+        }
+        .comment-box-3>p:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./logo-bt2.jpg" />
+            <div class="name">
+                <a href="#">
+                    <p> Alex reseira </p>
+                </a>
+                <time datetime="31-5-2017"> May 31 2017 - 5min read</time>
+            </div>
+            
+        </div>
+        <div class="picture">
+            <img src="./logo-ss8-bt2.jpg"/>
+        </div>
+        <div class="infomation">
+            <div class="info">
+                <h3 style="font-size: 20px;"> Exclusive interview with InVision's CEO </h3>
+                <p> Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten an email from Clark or from InVision at one time or another, but if you’re not familiar with the company. </p>
+                <a href="#" style="padding-left: 0;">
+                    <span> Readmore </span>
+                </a>
+            </div>
+            <div>
+                <hr size="1px" color="gray";/>
+            </div>
+            <div class="comment">
+                <div class="comment-box-1">
+                    <div style="color: #72c02c; padding-top: 15px;">
+                        <span class="iconify" data-icon="bytesize:heart"></span>
+                    </div>
+                    <p> 5k </p>
+                </div>
+                <div class="comment-box-2">
+                    <div style="color: #72c02c; padding-top: 15px;">
+                        <span class="iconify" data-icon="bx:bx-comment-detail"></span>
+                    </div>
+                    <p> 10 Commnets </p>
+                </div>
+                <div class="comment-box-3">
+                    <div style="color: #72c02c; padding-top: 15px;">
+                        <span class="iconify" data-icon="bytesize:bookmark"></span>
+                    </div>
+                    <p> Bookmark </p>
+                </div>
+            </div> 
+            <div>
+                <hr size="1px" color="gray";/>
+            </div>       
+        </div>
+    </div>
+</body>
+</html>

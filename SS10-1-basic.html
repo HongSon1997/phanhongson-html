@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SS10-1-basic </title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            background-color: rgb(148, 146, 146);
+            margin: 0 auto;
+            flex-direction: column;
+            border: 1px solid gray;
+        }
+        .avatar{
+            flex: 1;
+            text-align: center;
+        }
+        .avatar img {
+            border-radius: 100px;
+            align-items: center;
+        }
+        .login{
+            flex: 1;
+        }
+        form{
+            margin: 0 auto;
+            background-color: cadetblue;
+            padding: 40px;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-green{
+            background-color: #4CB050;
+            width: 310px;
+            margin-top: 15px;
+            color: white;
+        }
+        .bg-green:hover{
+            cursor: pointer;
+        }
+        .input-label{
+            margin-top: 15px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="avatar">
+           <img src="./ss8-bt3-3.jpg" width="200px" height="200px"/>
+       </div>
+       <div class="login">
+        <form>
+            <label class="input-label"> Username </label>
+            <input type="text" placeholder="Enter Username" style="width: 300px;"/>
+            <label class="input-label"> Password </label>
+            <input type="text" placeholder="Enter Password" style="width: 300px;"/>
+            <input type="submit" value="Login" class="bg-green"> 
+            <div style="margin-top: 10px;">
+                <input type="checkbox" name="Remember me" value="Remember me">Remember 
+            </div>
+        </form>
+       </div>
+    </div>    
+</body>
+</html>

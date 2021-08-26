@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SS10-1-advanced </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            display: flex;
+            max-width: 800px;
+            height: 100vh;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-box{
+            display: flex;
+            flex: 1;
+            max-width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: #5952FF;
+        }
+        .right-box{
+            display: flex;
+            flex: 1;
+            max-width: 400px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            flex-direction: column;
+        }
+        .box-top{
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            align-content: flex-end;
+        }
+        .box-top>img{
+            margin-top: 50px;
+        }
+        .box-bottom{
+            flex: 1;
+            /* align-items: center; */
+            justify-content: center;
+            display: flex;
+            /* max-height: 200px; */
+            flex-direction: column;
+        }
+        .top{
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            /* padding: 20px; */
+        }
+        .bottom{
+            flex: 1;
+            display: flex;
+            font-size: 8px;
+            justify-content: flex-end;
+        }
+        .bottom>span{
+            margin-top: 30px;
+            color: gray;
+            font-weight: bold;
+        }
+        .sign-in{
+            display: flex;
+            font-size: 13px;
+            justify-content: space-between;
+        }
+        .button{
+            background-color: #5952FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 13px;
+            height: 30px;
+            width: 60px;
+        }
+        .button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <img src="./outreach-logo.png" width="200px"/>
+        </div>
+        <div class="right-box">
+            <div class="box-top">
+                <img src="./computer-logo.png" width="200px" height="150px"/>
+            </div>
+            <div class="box-bottom">
+                <div class="top">
+                    <strong style="margin-bottom: 10px;"> Sign in </strong>
+                    <input type="email" placeholder="Email" required> <br/>
+                    <input type="password" placeholder="Password" required> <br/>
+                    <div class="sign-in"> 
+                        <span style="color: rgb(87, 192, 182); margin-top: 10px;"> Forgot password? </span>
+                        <button class="button"> Sign in </button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <span style="padding-right: 10px;"> STATUS </span>
+                    <span style="padding-left: 10px;"> TERMS </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
