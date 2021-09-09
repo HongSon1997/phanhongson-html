@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cua lenh if 2</title>
+</head>
+<body>
+    <script>
+        /*Nhập vào một số gọi là tháng trong năm. Sau đó in ra màn hình tên tháng đó theo quy tắc (Dùng 02 cách: if-else if và switch):
+
+        1, 2, 3: XUAN
+        4, 5, 6: HA
+        7, 8, 9: THU
+        10, 11, 12: DONG  */
+
+        // Cach 1: dung if-else if
+        var x = prompt('Nhap thang trong nam', 0);
+        if (x == 1 || x == 2 || x == 3) {
+            alert('Day la mua Xuan');
+        } else if (x == 4 || x == 5 || x == 6) {
+            alert('Day la mua Ha');
+        } else if (x == 7 || x == 8 || x == 9) {
+            alert('Day la mua Thu');
+        } else if (x == 10 || x == 11 || x == 12) {
+            alert('Day la mua Dong');
+        } else if (x > 12) {
+            alert('Ban nhap sai thang trong nam');
+        }
+        // Cach 2: dung switch
+        var month = prompt('Nhap thang trong nam', 0);
+        switch (month) {
+            case '1':month
+            case '2':month
+            case '3':month
+                alert('Day la mua Xuan');
+            break;
+            case '4':month
+            case '5':month
+            case '6':month
+                alert('Day la mua Ha');
+            break;
+            case '7':month
+            case '8':month
+            case '9':month
+                alert('Day la mua Thu');
+            break;
+            case '10':month
+            case '11':month
+            case '12':month
+                alert('Day la mua Dong');
+            break;
+            default:
+                alert('Ban nhap sai thang trong nam');
+        }
+    </script>
+</body>
+</html>

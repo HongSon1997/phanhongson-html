@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiem tra so chia het cho 3</title>
+</head>
+<body>
+    <script>
+        // var number = parseInt(prompt('Nhap so can kiem tra'));
+        // var numberChecked = (number % 3);
+
+        // if (numberChecked == 0) {
+        //     doccument.writeln(number + '' + 'La so chia het cho 3');
+        // } else if (numberCheckhhed > 0) {
+        //     document.writeln(number + '' + 'La so ko chia het cho 3');
+        // } else {
+        //     document.writeln('Ki tu ban nhap ko phai la so');
+        // }
+
+        //Nhap tu ban phim 1 so nguyên dương n, sau đó in ra từ 1 đến n có bao nhiêu số chia hết cho 3.
+
+        let n = prompt('Nhap vao 1 so nguyen duong', 0);
+
+        let number = 0;
+        for (let i = 1; i <= n; i++) {
+            if (i % 3 === 0) {
+                number = number + 1;
+            }
+        }
+        document.write(number);
+        
+    </script>
+</body>
+</html>
