@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <style>
+        .phone{
+            display: flex;
+        }
+        .phone-1{
+            flex: 1;
+        }
+        .phone-2{
+            flex: 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <h1> Contact sales </h1>
+            <p> Nullam risus landit ac aliquam justi ipsum. Quam mauris volupat massa dictums amet. Sapien tortor lacus arcu.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label"> First name </label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label"> Last name </label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"> Company </label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"> Email </label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"> Phone number </label>
+                <div class="phone">
+                    <div class="phone-1">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected> VN </option>
+                            <option value="1"> US </option>
+                            <option value="2"> EU </option>
+                            <option value="3"> NA </option>
+                        </select>
+                    </div>
+                    <div class="phone-2">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0987.654.321">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> Message </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <form>
+                <div class="col-12" style="margin-bottom: 15px;">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        By selecting this, you agree to the <a href="#">Privacy</a> and <a href="#">Cookie Policy.</a>
+                      </label>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Let's talk</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

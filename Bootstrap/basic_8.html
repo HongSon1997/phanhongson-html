@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-8</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Video Plyr -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+
+    <style>
+        .container{
+            border: 1px solid gray;
+        }
+        .nav-link{
+            color: black!important;
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+        .nav-link:hover{
+            border-bottom: 2px orange !important;
+        }
+        .right-info{
+            margin: 5px;
+          
+        }
+        .list-item{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .payment-left{
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .payment-right{
+            margin-right: 10px;
+        }
+        .img-top{
+            position: relative;
+        }
+        .video-top{
+            width: 300px;
+            /* height: 100px; */
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            /* border: 2px white; */
+            background-color: aliceblue;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Phan 1 -->
+        <div class="row img-top">
+            <img src="pc3.jpg" alt="">
+            <div class="video-top">
+                <div style="margin: 0 auto;">
+                    <div class="plyr__video-wrapper">
+                      <video id="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576" />
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720" />
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080" />
+              
+                        <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default="" />
+                        <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
+              
+                        <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download=""></a>
+                      </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phan 2 -->
+        <div class="row mt-4">
+            <div class="col-lg-8">
+                <nav class="nav link">
+                    <a class="nav-link" href="#" style="border-bottom: 2px orange;"> Overview </a>
+                    <a class="nav-link" href="#"> Currriculum </a>
+                    <a class="nav-link" href="#"> Instructor </a>
+                    <a class="nav-link" href="#"> Reviews </a>
+                </nav>
+                <h2 class="fs-2 fw-bold"> Course Description </h2>
+                <p> 
+                    Mobile phones, especially smart phones, bring a lot of benefits in mordern world. 
+                    It’s a means of communication, an entertainment device and with the Internet, we can do everything with our phones.
+                     Also, it helps us to learn things more easily.
+                </p>
+                <p>
+                    I find my phone really useful to learn English. Firstly, I can use the dictionary in the phone instead 
+                    of bringing a big traditional one. Google Translate is a good friend too! Secondly, there are many applications
+                     which teach English nowdays.
+                </p>
+                <h2 class="fs-2 fw-bold"> Certification </h2>
+                <p> 
+                    Mobile phones, especially smart phones, bring a lot of benefits in mordern world. 
+                    It’s a means of communication, an entertainment device and with the Internet, we can do everything with our phones.
+                     Also, it helps us to learn things more easily.
+                </p>
+                <h2 class="fs-2 fw-bold"> Who this course is for </h2>
+                <p> 
+                    Mobile phones, especially smart phones, bring a lot of benefits in mordern world. 
+                    It’s a means of communication, an entertainment device and with the Internet, we can do everything with our phones.
+                     Also, it helps us to learn things more easily.
+                </p>
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="d-flex flex-column">
+                    <div class="card list-item">
+                        <div class="d-flex right-info mt-3">
+                            <i class="bi bi-tags" style="color: rgb(240, 53, 53);"></i>
+                            <p class="payment-left"> Price </p>
+                        </div>
+                        <span class="payment-right fw-bold fs-5 mt-3" style="color: rgb(240, 53, 53);"> $49 </span>
+                    </div>
+                    <div class="card list-item">
+                        <div class="d-flex right-info mt-3">
+                            <i class="bi bi-file-person" style="color: rgb(240, 53, 53);"></i>
+                            <p class="payment-left"> Instructor </p>
+                        </div>
+                        <span class="payment-right fw-bold mt-3" style="color:gray;"> Sarah Taylor </span>
+                    </div>
+                    <div class="card list-item">
+                        <div class="d-flex right-info mt-3">
+                            <i class="bi bi-alarm" style="color: rgb(240, 53, 53);"></i>
+                            <p class="payment-left"> Duration </p>
+                        </div>
+                        <span class="payment-right fw-bold mt-3" style="color:gray;"> 7 weeks </span>
+                    </div>
+                    <div class="card list-item">
+                        <div class="d-flex right-info mt-3">
+                            <i class="bi bi-book-half" style="color: rgb(240, 53, 53);"></i>
+                            <p class="payment-left"> Lessons </p>
+                        </div>
+                        <span class="payment-right fw-bold mt-3" style="color:gray;"> 25 </span>
+                    </div>
+                    <div class="card list-item">
+                        <div class="d-flex right-info mt-3">
+                            <i class="bi bi-calendar2-minus" style="color: rgb(240, 53, 53);"></i>
+                            <p class="payment-left"> Enrolled </p>
+                        </div>
+                        <span class="payment-right fw-bold mt-3" style="color:gray;"> 255 students </span>
+                    </div>
+                    <div class="card list-item">
+                        <div class="d-flex right-info mt-3">
+                            <i class="bi bi-clock" style="color: rgb(240, 53, 53);"></i>
+                            <p class="payment-left"> Access </p>
+                        </div>
+                        <span class="payment-right fw-bold mt-3" style="color:gray;"> Lifetime </span>
+                    </div>
+                    <div class="d-grid mb-3 mt-3">
+                        <button class="btn btn-danger" type="button">
+                            <i class="bi bi-cart-check" style="color: white; font-size: 20px;"></i>
+                            <span style="color: aliceblue;"> Add to cart </span>
+                        </button>
+                    </div>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <i class="bi bi-tags"></i>
+                            <span> Buy Now </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const player = new Plyr('#player', {
+          fullscreen: {
+            enabled: true,
+          },
+        });
+    </script>
+</body>
+</html>
